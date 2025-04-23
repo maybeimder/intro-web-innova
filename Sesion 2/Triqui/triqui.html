@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="triqui.css">
+    <script defer src="triqui.js"></script>
+    <title>Triqui</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="player-container">
+                <div class="pfp"></div>
+                <div class="user-info-container">
+                    <h2>Jugador 1</h2>
+                    <span id="p1-score">🐊 0 Puntos</span>
+                </div>
+            </div>
+
+            <button id="theme-btn">🌙</button>
+            
+            <div class="player-container">
+                <div class="pfp"></div>
+                <div class="user-info-container">
+                    <h2>Jugador 2</h2>
+                    <span id="p2-score">🦜 0 Puntos</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid">
+                <div class="clickeable-container" id="clck-cc0" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc1" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc2" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc3" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc4" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc5" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc6" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc7" onclick="handleCell(event)"></div>
+                <div class="clickeable-container" id="clck-cc8" onclick="handleCell(event)"></div>
+            </div>
+
+            <div class="action-container">
+                <button id="random-btn"> RANDOM </button>
+                <button id="reset-btn" onclick="resetBoard()"> RESET  </button>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
